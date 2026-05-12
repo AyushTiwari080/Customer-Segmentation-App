@@ -1,0 +1,19 @@
+__pycache__/
+.mypy_cache/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.DS_Store
+.DS_Store
+
+# Data files (optional; keep if you want them in repo)
+# *.csv
+# *.xlsx
+# *.xls
+
+# Streamlit cache
+.streamlit/
+
