@@ -2,7 +2,11 @@ services:
   - type: web
     name: customer-segmentation-app
     env: python
+    # Pin a Python version compatible with pandas wheels to avoid building pandas from source
+    # (Render default can be too new and causes pandas build failures.)
+    runtime: python-3.11.9
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
     plan: free
+
 
